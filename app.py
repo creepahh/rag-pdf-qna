@@ -105,6 +105,7 @@ def process_document(uploaded_file):
 # CHROMA VECTOR DATABASE
 # ---------------------------------------------------------
 
+@st.cache_resource
 def get_vector_collection():
 
     ollama_ef = OllamaEmbeddingFunction(
